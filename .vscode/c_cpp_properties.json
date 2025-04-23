@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "macos-gcc-arm64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/opt/homebrew/Cellar/libomp/20.1.3/include",
+        "/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin23/14/include",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+      ],
+      "compilerPath": "/opt/homebrew/bin/gcc-14",  // Utilise GCC ici
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-gcc-arm64",
+      "compilerArgs": [
+        "-Xpreprocessor",
+        "-fopenmp",
+        "-I/opt/homebrew/Cellar/libomp/20.1.3/include",
+        "-L/opt/homebrew/Cellar/libomp/20.1.3/lib",
+        "-lomp"
+      ]
+    }
+  ],
+  "version": 4
+}
